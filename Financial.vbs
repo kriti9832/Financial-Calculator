@@ -31,18 +31,6 @@ Function Monthly(InsideDeposit)
 	next
 	Monthly = vInterim
 end function
-
-
-
-
-
-
-
-
-
-
-
-
 Function Loan(InsideLoan)
 	vRate = (vAPR/12 + 1)^(vYrs*12)
 	vCalc = (InsideLoan * vRate) / (vRate - 1) * (vAPR/12)
